@@ -5,10 +5,10 @@
  *)
 
 (* Here, we introduce a few ways to test the functions you wrote in
-   lab. One or more of these methods may be useful in the future as
+   lab. One or more of these methods will be useful in the future as
    you will want to provide for unit-testing of your code for problem
    sets and the final project. As an example, we provide a few tests
-   for the square_all function.
+   for the `square_all` function.
  *)
 
 open Lab1 ;; (* for access to your lab1 solution *)
@@ -34,10 +34,9 @@ test_square_bool () ;;
 
 (* Method 2: unit_test
 
-   By making use of side effects, we can print an
-   indicative message relating to each test. We will
-   use the unit-test function provided in the Absbook module.
- *)
+   By making use of side effects, we can print an indicative message
+   relating to each test. We will use the unit-test function provided
+   in the `Absbook` module.  *)
 let test_square () =
   unit_test (square 0 = 0) "square zero";
   unit_test (square 1 = 1) "square one";
